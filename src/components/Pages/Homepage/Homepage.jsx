@@ -1,9 +1,8 @@
 
 
 const Homepage = () => {
-    console.log('Homepage is rendering');
   return (
-    <div>
+    <div className="pt-20">
       <h3>This is the homepage</h3>
     </div>
   )
