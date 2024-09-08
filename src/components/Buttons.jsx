@@ -2,7 +2,7 @@
 export default function ContactUsBtn({label}) {
     return (
         <div>
-            <button className="border border-buttonGreen rounded-lg text-buttonGreen px-3 md:hover:text-white">{label}</button>
+            <button className="border-2 border-buttonGreen rounded-lg text-buttonGreen px-3 py-1 md:hover:text-white font-medium">{label}</button>
         </div>
     )
 }

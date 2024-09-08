@@ -1,4 +1,4 @@
-import ContactUsBtn from "../../components/Buttons"
+import Contact from "./Contact"
 import HowWeWork from "./HowWeWork"
 import OurSolutions from "./OurSolutions"
 import Pricing from "./Pricing"
@@ -40,10 +40,7 @@ const Products = () => {
       </div>
 
       {/* Contact US  */}
-      <div className="bg-[url('/images/productPage/contact-us-section.png')] bg-cover bg-center">
-        <h3>Need help finding what you want?</h3>
-        <ContactUsBtn label={"Contact Us For A Consultation"} />
-      </div>
+      <Contact />
     </div>
   )
 }
