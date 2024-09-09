@@ -1,20 +1,17 @@
 import Footer from "./Footer";
 import Navigation from "./Navbar";
 
-
 // eslint-disable-next-line react/prop-types
-export default function Layout ({ children }) {
+export default function Layout({children}) {
     return (
         <div>
             <header>
-                <Navigation  />
+                <Navigation />
             </header>
-            <main className="">  
-                {children}
-            </main>
+            <main className="">{children}</main>
             <footer>
-               <Footer />
+                <Footer />
             </footer>
         </div>
-    )
+    );
 }
