@@ -2,6 +2,7 @@ import {Button, Card, Blockquote} from "flowbite-react";
 
 import HeroBg from "./assets/HeroBg.jpg";
 import WhatWeDoBG from "./assets/Waves-doodle.jpg";
+import ContactUsCTA from "./assets/ContactUs-CTA.png";
 import Img1 from "../Homepage/assets/Img1.jpg";
 import Img2 from "../Homepage/assets/Img2.jpg";
 import ContentCreationCard from "../Homepage/assets/Content-Creation.jpg";
@@ -291,11 +292,14 @@ const Testimonals = () => {
 // CONTACT US
 const ContactUs = () => {
     return (
-        <div className="py-5 m-auto" style={{backgroundImage: `url(${WhatWeDoBG})`}}>
+        <div className="py-5 m-auto bg-neutral-100">
             <h2 className="text-3xl font-semibold py-4 text-blue-800 text-center">Contact Us</h2>
             <div className="bg-transparent border-gray-800 flex flex-col justify-center items-center md:flex-row">
                 {/* Telephone */}
-                <div className="flex flex-row m-3 items-center">
+                <div
+                    className="flex flex-row m-3 items-center bg-center bg-contain"
+                    style={{backgroundImage: `url(${ContactUsCTA})`}}
+                >
                     <img src={telphoneIcone} alt="telephoneIcon" className="p-2" />
                     <p className="text-sm text-blue-800">09213324589</p>
                 </div>
