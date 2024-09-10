@@ -5,6 +5,8 @@ import WhatWeDoBG from "./assets/Waves-doodle.jpg";
 import ContactUsCTA from "./assets/ContactUs-CTA.png";
 import Img1 from "../Homepage/assets/Img1.jpg";
 import Img2 from "../Homepage/assets/Img2.jpg";
+import Img1Sm from "../Homepage/assets/Img1sm.png";
+import Img2sm from "../Homepage/assets/Img2Sm.png";
 import ContentCreationCard from "../Homepage/assets/Content-Creation.jpg";
 import WebDev from "../Homepage/assets/WebandMobile-Dev.jpg";
 import DataAnalysis from "./assets/Data-Analysis.jpg";
@@ -105,11 +107,11 @@ const Hero = () => {
                     </p>
                     {/* THE BUTTONS */}
                     <div className="mt-5 my-auto flex flex-row items-center justify-center w-full">
-                        <Button color="blue" className="rounded-3xl w-48 md:w-36 h-10">
+                        <Button color="blue" className="rounded-3xl w-48 md:w-32 md:mx-10 h-10">
                             <a className="font-normal text-white">Submit Brief</a>
                         </Button>
                     </div>
-                    <div className="mt-5 my-auto flex flex-col items-center justify-center gap-3 md:flex-row md:mt-7 w-full ">
+                    <div className="mt-5 my-auto hidden flex-col items-center justify-center gap-3  md:flex md:flex-row md:mt-7 md:items-center md:justify-center md:mr-4 md:gap-2">
                         <Button color="blue" className="rounded-3xl w-44 h-10">
                             <a className="font-bold text-white">Get started</a>
                         </Button>
@@ -145,11 +147,20 @@ const WhatWeDo = () => {
                                 captivating digital experiences that drive growth and success.
                             </p>
                         </div>
-                        {/* FOR THE IMAGE */}
-                        <div className="">
-                            <img src={Img1} alt="Img1" className="w-3/4 m-auto py-4 md:w-[500px]" />
+                        {/* FOR THE IMAGE FOR Mobile*/}
+                        <div className="block md:hidden">
+                            <img
+                                src={Img1Sm}
+                                alt="Img1"
+                                className="w-3/4 m-auto py-4 md:w-[500px] bg-center bg-cover"
+                            />
+                        </div>
+                        {/* FOR THE IMAGE FOR md */}
+                        <div className="hidden md:block">
+                            <img src={Img1} alt="Img1" className="w-3/4 m-auto py-4 md:w-[500px] bg-center bg-cover" />
                         </div>
                     </div>
+
                     {/* 2nd Paragarph */}
                     <div className="flex flex-col m-auto py-2 text-left  md:flex-row-reverse justify-center items-center md:gap-1 md:py-1 md:mx-8">
                         {/* WRITE UP */}
@@ -165,8 +176,12 @@ const WhatWeDo = () => {
                                 results. Let’s make your vision a reality.
                             </p>
                         </div>
-                        {/* FOR THE IMAGE */}
-                        <div className="">
+                        {/* FOR THE IMAGE FOR Mobile*/}
+                        <div className="block md:hidden">
+                            <img src={Img2sm} alt="Img1" className="w-3/4 m-auto py-4 md:w-[500px] md:py-1" />
+                        </div>
+                        {/* FOR THE IMAGE FOR TABLET*/}
+                        <div className="hidden md:block">
                             <img src={Img2} alt="Img1" className="w-3/4 m-auto py-4 md:w-[500px] md:py-1" />
                         </div>
                     </div>
@@ -294,7 +309,10 @@ const ContactUs = () => {
     return (
         <div className="py-5 m-auto bg-neutral-100">
             <h2 className="text-3xl font-semibold py-4 text-blue-800 text-center">Contact Us</h2>
-            <div className="bg-transparent border-gray-800 flex flex-col justify-center items-center md:flex-row">
+            <div
+                className="md:border border-gray-800 flex flex-col justify-center items-center md:flex-row bg-center bg-cover md:w-1/2 md:mx-auto rounded-2xl mb-5 "
+                style={{backgroundImage: `url(${WhatWeDoBG})`}}
+            >
                 {/* Telephone */}
                 <div
                     className="flex flex-row m-3 items-center bg-center bg-contain"
