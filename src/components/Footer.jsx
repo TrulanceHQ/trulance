@@ -35,7 +35,10 @@ const Footer = () => {
         </div>
         <div className="flex flex-row items-center space-x-3">
           <MdOutlineEmail className=" w-6 h-6" />
-          <h3 className="text-base font-medium flex flex-row space-x-2">  info@trulance.io</h3>
+          <h3 className="text-base font-medium flex flex-row space-x-2">
+            {" "}
+            info@trulance.io
+          </h3>
         </div>
       </div>
       {/* Section 4  */}
@@ -51,7 +54,7 @@ const Footer = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
