@@ -76,7 +76,7 @@ const TestimonialCards = [
 
 const Homepage = () => {
     return (
-        <div className="pt-12">
+        <div className="pt-0">
             <Hero />
             <WhatWeDo />
             <Solutions />
@@ -218,7 +218,7 @@ const Solutions = () => {
                                     <h3 className="text-xl text-center font-semibold tracking-tight text-white dark:text-gray-400 py-5">
                                         {title}
                                     </h3>
-                                    <div className="m-auto">
+                                    <div className="mx-5">
                                         <ContactUsBtn label={"Read More"} />
                                     </div>
                                 </div>
@@ -234,7 +234,7 @@ const Solutions = () => {
 // QUALITY
 const Quality = () => {
     return (
-        <div className="bg-neutral-100 py-8">
+        <div className="bg-white py-8">
             <h2 className="text-blue-900 font-semibold text-3xl text-center py-4">Why Choose Us</h2>
             {/* FOR THE QUALITY CARDS */}
             <div className="flex flex-col gap-4 justify-center items-center lg:flex-row">
@@ -282,7 +282,7 @@ const Banner = () => {
 
 const Testimonals = () => {
     return (
-        <div className="bg-neutral-100 py-5">
+        <div className="bg-white py-5">
             <h2 className="text-blue-900 font-semibold text-3xl text-center py-4">
                 What clients have to say about us.
             </h2>
