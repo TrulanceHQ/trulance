@@ -1,5 +1,5 @@
 import Layout from "./Layout";
-import Homepage from "./components/Pages/Homepage/Homepage";
+import Homepage from "./Pages/Homepage/Homepage";
 import About from "./Pages/About/About";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Products from "./Pages/Products/Products";

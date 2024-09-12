@@ -120,14 +120,14 @@ const Hero = () => {
               <a className="font-normal text-white">Submit Brief</a>
             </Button>
           </div>
-          <div className="mt-5 my-auto hidden flex-col items-center justify-center gap-3  md:flex md:flex-row md:mt-7 md:items-center md:justify-center md:mr-4 md:gap-2">
-            <Button color="blue" className="rounded-3xl w-44 h-10">
-              <a className="font-bold text-white">Get started</a>
-            </Button>
-            <Button className="rounded-3xl w-28 h-10 bg-transparent border-green-600">
-              <a className="font-bold text-green-600">Sign In</a>
-            </Button>
-          </div>
+          {/* <div className="mt-5 my-auto hidden flex-col items-center justify-center gap-3  md:flex md:flex-row md:mt-7 md:items-center md:justify-center md:mr-4 md:gap-2">
+                        <Button color="blue" className="rounded-3xl w-44 h-10">
+                            <a className="font-bold text-white">Get started</a>
+                        </Button>
+                        <Button className="rounded-3xl w-28 h-10 bg-transparent border-green-600">
+                            <a className="font-bold text-green-600">Sign In</a>
+                        </Button>
+                    </div> */}
         </div>
       </div>
     </div>
@@ -139,13 +139,15 @@ const WhatWeDo = () => {
   return (
     <div
       style={{ backgroundImage: `url(${WhatWeDoBG})` }}
-      className="py-5 bg-center bg-cover"
+      className="py-5 bg-center bg-cover px-2"
     >
       <div className="container text-gray-600">
-        <h1 className="text-gray-600 text-center py-4">What We Do.</h1>
+        <h1 className="text-blue-900 font-semibold text-3xl text-center py-4">
+          What We Do.
+        </h1>
         <div className="w-full m-auto lg:max-w-[900px]">
           {/* 1st Paragraph */}
-          <div className="flex flex-col gap-3 m-auto py-2 text-left md:flex-row justify-center items-center md:gap-1 md:py-1 md:mx-8">
+          <div className="flex flex-col-reverse gap-3 m-auto py-3 text-left md:flex-row justify-center items-center md:gap-1 md:py-1 md:mx-8">
             {/* WRITE-UP */}
             <div className="m-auto w-3/4 lg:max-w-[400px] md:m-4">
               <p className="">
@@ -180,7 +182,7 @@ const WhatWeDo = () => {
           </div>
 
           {/* 2nd Paragarph */}
-          <div className="flex flex-col m-auto py-2 text-left  md:flex-row-reverse justify-center items-center md:gap-1 md:py-1 md:mx-8">
+          <div className="flex flex-col-reverse m-auto py-3 text-left  md:flex-row-reverse justify-center items-center md:gap-1 md:py-1 md:mx-8">
             {/* WRITE UP */}
             <div className="m-auto w-3/4  lg:max-w-[400px] md:m-4">
               <p className="">
@@ -231,7 +233,7 @@ const WhatWeDo = () => {
 const Solutions = () => {
   return (
     <div className="bg-neutral-50">
-      <h1 className="text-3xl font-semibold py-4 text-blue-800 text-center">
+      <h1 className="text-blue-900 font-semibold text-3xl text-center py-4">
         Our Solutions
       </h1>
       {/* SOLUTIONS CARD */}
@@ -245,7 +247,7 @@ const Solutions = () => {
               style={{ backgroundImage: `url(${src})` }}
             >
               <div className="mt-48 pt-14 mx-[2px] mb-2 lg:justify-end">
-                <h3 className="text-2xl font-semibold tracking-tight text-white dark:text-gray-400 py-5">
+                <h3 className="text-xl text-center font-semibold tracking-tight text-white dark:text-gray-400 py-5">
                   {title}
                 </h3>
                 <Button className="rounded-xl w-44 bg-transparent border-green-600 hover:bg-green-600 hover:text-white mx-auto">
@@ -269,7 +271,7 @@ const Solutions = () => {
 const Quality = () => {
   return (
     <div className="bg-neutral-100 py-8">
-      <h2 className="text-3xl font-semibold py-4 text-blue-800 text-center">
+      <h2 className="text-blue-900 font-semibold text-3xl text-center py-4">
         Why Choose Us
       </h2>
       {/* FOR THE QUALITY CARDS */}
@@ -311,8 +313,9 @@ const Banner = () => {
             </a>
           </Button>
         </div>
+        <div className="w-20 border-t border-gray-100 my-1 md:w-0 md:border-t-0 md:border-r md:h-16"></div>
         <div className="flex flex-col my-5 text-center py-4 md:py-2">
-          <h2 className="text-white text-2xl">
+          <h2 className="text-white text-2xl md:text-xl">
             Need help finding what you want?
           </h2>
           <p className="text-sm pb-3">
@@ -328,7 +331,7 @@ const Banner = () => {
 const Testimonals = () => {
   return (
     <div className="bg-neutral-100 py-5">
-      <h2 className="text-3xl font-semibold py-4 text-blue-800 text-center">
+      <h2 className="text-blue-900 font-semibold text-3xl text-center py-4">
         What clients have to say about us.
       </h2>
       {/* TESTIMONIALS */}
@@ -341,7 +344,9 @@ const Testimonals = () => {
                   <span className="text-4xl text-blue-800 font-bold italic">
                     &quot;
                   </span>
-                  <p className="py-2">{body}</p>
+                  <p className="py-2 text-xl text-neutral-500 font-normal">
+                    {body}
+                  </p>
                   <img src={NameTag} alt={client} className="py-3" />
                 </Blockquote>
               </Card>
@@ -356,7 +361,7 @@ const Testimonals = () => {
 const ContactUs = () => {
   return (
     <div className="py-5 m-auto bg-neutral-100">
-      <h2 className="text-3xl font-semibold py-4 text-blue-800 text-center">
+      <h2 className="text-blue-900 font-semibold text-3xl text-center py-4">
         Contact Us
       </h2>
       <div
