@@ -9,7 +9,7 @@ export default function Navigation() {
     };
 
     return (
-        <nav className="top-0 left-0 w-full z-10 absolute border-gray-200 dark:bg-gray-900">
+        <nav className="top-0 left-0 w-full backdrop-blur-md z-10 fixed border-gray-200 dark:bg-gray-900">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src="images/Logo.png" className="h-8" alt="Trulance Logo" />
@@ -39,10 +39,10 @@ export default function Navigation() {
                     </svg>
                 </button>
                 <div
-                    className="hidden w-full md:w-64 md:flex flex-row justify-evenly md:border-none bg-transparent backdrop-blur-md md:backdrop-blur-0 md:bg-transparent border border-gray-100 rounded-lg mt-4 md:mt-0"
+                    className="hidden w-full md:w-96 md:flex flex-row justify-center md:border-none bg-transparent backdrop-blur-md  md:bg-transparent border border-gray-100 rounded-lg mt-4 md:mt-0"
                     id="navbar-default"
                 >
-                    <ul className="font-medium flex flex-col pt-10 justify-start md:justify-center md:items-start items-center h-[80vh] md:h-auto p-4 md:p-0 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <ul className="font-medium flex flex-col pt-10  md:w-80 justify-start md:justify-center md:items-start items-center h-[80vh] md:h-auto p-4 md:p-0 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                         <li className="w-full text-center border-b border-t border-gray-100 md:border-0">
                             <a
                                 href="/about"
@@ -69,7 +69,9 @@ export default function Navigation() {
                     </ul>
                 </div>
                 <div className="hidden w-full md:w-auto md:flex flex-row justify-between">
-                    <ContactUsBtn label={"Contact Us"} />
+                    <a href="/#ContactUs">
+                        <ContactUsBtn label={"Contact Us"} />
+                    </a>
                 </div>
             </div>
         </nav>
