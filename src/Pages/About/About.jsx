@@ -21,14 +21,14 @@ const AboutHero = () => {
         backgroundImage: `url('/about/aboutbg.png')`,
         minHeight: "70vh", // Replaces fixed height
         paddingTop: "100px",
-        marginTop: "-100px"
+        marginTop: "-80px",
       }}
     >
       <div className="text-white" style={{ marginTop: "7%" }}>
         <h1 className="text-2xl md:text-3xl font-normal mb-4 xl:text-4xl aboutText">
           Innovative solutions from concept to completion
         </h1>
-        <p className="text-base md:text-lg mb-8 px-8">
+        <p className="text-base md:text-lg my-8 px-8">
           Digitally transform your business and online presence with our
           solutions
         </p>

@@ -9,7 +9,7 @@ export default function Navigation() {
     }
 
     return (
-        <nav className="top-0 left-0 w-full z-10 absolute border-gray-200 backdrop-blur-md bg-gray-900 bg-opacity-50 dark:bg-gray-900 dark:bg-opacity-50">
+        <nav className="top-0 left-0 w-full z-10 sticky bg-gray-900 bg-opacity-50 backdrop-blur-md dark:bg-gray-900 dark:bg-opacity-50">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src="images/Logo.png" className="h-8" alt="Trulance Logo"/>
