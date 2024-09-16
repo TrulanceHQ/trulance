@@ -19,8 +19,7 @@ const AboutHero = () => {
       className="bg-cover bg-center text-center py-20 aboutSection"
       style={{
         backgroundImage: `url('/about/aboutbg.png')`,
-        minHeight: "70vh", // Replaces fixed height
-        paddingTop: "100px",
+        maxHeight: "70vh",
         marginTop: "-80px",
       }}
     >
