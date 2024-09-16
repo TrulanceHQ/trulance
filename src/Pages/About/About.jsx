@@ -21,6 +21,7 @@ const AboutHero = () => {
         backgroundImage: `url('/about/aboutbg.png')`,
         minHeight: "70vh", // Replaces fixed height
         paddingTop: "100px",
+        marginTop: "-100px"
       }}
     >
       <div className="text-white" style={{ marginTop: "7%" }}>
