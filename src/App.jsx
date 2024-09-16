@@ -1,8 +1,8 @@
-import Layout from './components/Layout';
-import Homepage from './components/Pages/Homepage/Homepage';
-import About from './components/Pages/About/About';
+import Layout from './Layout';
+import Homepage from './Pages/Homepage/Homepage';
+import About from './Pages/About/About';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Products from './components/Pages/Products/Products';
+import Products from './Pages/Products/Products';
 
 function App() {
   return (
