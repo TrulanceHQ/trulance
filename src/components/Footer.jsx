@@ -43,11 +43,11 @@ const Footer = () => {
         <div>
           <p>Follow us on</p>
         </div>
-        <div className="flex flex-row space-x-3">
-          <img src="/images/productPage/ig.png" alt="instagram" />
-          <img src="/images/productPage/linkedIn.png" alt="linkedIn" />
-          <img src="/images/productPage/x.png" alt="X" />
-          <img src="/images/productPage/facebook.png" alt="" />
+        <div className="flex flex-row space-x-3 items-center">
+          <img src="/images/productPage/ig.png" alt="instagram"  className="w-8 h-8"/>
+          <img src="/images/productPage/linkedIn.png" alt="linkedIn" className="w-8 h-8"/>
+          <img src="/images/productPage/x.png" alt="X" className="w-5 h-6"/>
+          <img src="/images/productPage/facebook.png" alt="" className="w-8 h-8"/>
         </div>
       </div>
     </div>

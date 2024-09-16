@@ -5,6 +5,7 @@ import DataPricingBoard from "./DataPricing";
 import DigitalPricingBoard from "./DigitalPricing";
 import WebPricingBoard from "./WebPricingBoard";
 
+
 export default function Pricing() {
     const [currentComponent, setCurrentComponent] = useState("web");
     const [buttonStyle, setButtonStyle] = useState({
@@ -70,7 +71,7 @@ export default function Pricing() {
                 </div>
                 <div className="md:mx-8">{renderComponent()}</div>
             </div>
-            <div className="text-black text-base mx-10 md:mx-6 xl:mx-48 my-6">
+            <div className="text-black text-base mx-10 md:mx-6 lg:mx-12 xl:mx-48 my-6">
                 <h3 className="font-bold ">NOTE:</h3>
                 <li>For companies requiring custom web applications (large-scale applications), pricing varies widely depending on the specific requirements of the project. Please contact us to discuss your project and we will provide you with a custom quote based on your needs.</li>
                 <li>Fees does not include Pictures, Graphics, Content, and Logo creation. You will provide the product image, pictures, content, graphics, logo, and icons for the each project.</li>
