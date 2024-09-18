@@ -11,8 +11,7 @@ const Footer = () => {
         </div>
         <p className="py-6">Copyright 2024</p>
         <div className="text-base space-y-1">
-          <p>8thGear Hub</p>
-          <p>41, CMD Rd, Magodo</p>
+          <p>41, CMD Rd, Magodo/</p>
           <p>Secretariat, Lagos</p>
         </div>
       </div>
@@ -25,7 +24,10 @@ const Footer = () => {
       <div className="flex flex-col space-y-6">
         <div className="flex flex-row items-center space-x-3">
           <LuPhone className=" w-6 h-6" />
-          <h3 className="text-base font-medium "> 09213324589</h3>
+          <a href="tel:+2349132462410">
+            {" "}
+            <h3 className="text-base font-medium ">+2349132462410</h3>
+          </a>
         </div>
         <div>
           <a href="#">Terms and conditions</a>
@@ -35,10 +37,13 @@ const Footer = () => {
         </div>
         <div className="flex flex-row items-center space-x-3">
           <MdOutlineEmail className=" w-6 h-6" />
-          <h3 className="text-base font-medium flex flex-row space-x-2">
+          <a href="mailto:info@trulance.io">
             {" "}
-            info@trulance.io
-          </h3>
+            <h3 className="text-base font-medium flex flex-row space-x-2">
+              {" "}
+              info@trulance.io
+            </h3>
+          </a>
         </div>
       </div>
       {/* Section 4  */}
@@ -47,9 +52,20 @@ const Footer = () => {
           <p>Follow us on</p>
         </div>
         <div className="flex flex-row space-x-3">
-          <img src="/images/productPage/ig.png" alt="instagram" />
-          <img src="/images/productPage/linkedIn.png" alt="linkedIn" />
-          <img src="/images/productPage/x.png" alt="X" />
+          <a href="https://lnkd.in/dKXQ3Kv7" target="_blank">
+            <img src="/images/productPage/ig.png" alt="instagram" />
+          </a>
+          <a
+            href="https://www.linkedin.com/company/trulancehq/"
+            target="_blank"
+          >
+            {" "}
+            <img src="/images/productPage/linkedIn.png" alt="linkedIn" />
+          </a>
+          <a href="https://x.com/TruLanceHQ" target="_blank">
+            {" "}
+            <img src="/images/productPage/x.png" alt="X" />
+          </a>
           <img src="/images/productPage/facebook.png" alt="facebook" />
         </div>
       </div>

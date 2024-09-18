@@ -1,0 +1,39 @@
+@media (max-width: 1440px) {
+  .aboutText {
+    padding-left: 400px;
+    padding-right: 400px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .aboutText {
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutText {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .aboutText {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .aboutSection {
+    height: auto; /* Allow content to dictate height */
+    min-height: 50vh; /* Ensures a minimum height */
+  }
+}
+
+@media (max-width: 320px) {
+  .aboutText {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}

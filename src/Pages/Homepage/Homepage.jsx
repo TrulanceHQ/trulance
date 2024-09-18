@@ -108,12 +108,18 @@ const Hero = () => {
           </p>
           {/* THE BUTTONS */}
           <div className="mt-5 my-auto flex flex-row items-center justify-center w-full">
-            <Button
-              color="blue"
-              className="rounded-3xl w-48 md:w-32 md:mx-10 h-10"
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdaeUFkq43_rwgoBEkUNDgdJTYJBFxVP4vi9V9t7Y0m4ntUpg/viewform?usp=sf_link"
+              target="_blank"
             >
-              <a className="font-normal text-white">Submit Brief</a>
-            </Button>
+              {" "}
+              <Button
+                color="blue"
+                className="rounded-3xl w-48 md:w-32 md:mx-10 h-10"
+              >
+                <a className="font-normal text-white">Submit Brief</a>
+              </Button>
+            </a>
           </div>
           {/* <div className="mt-5 my-auto hidden flex-col items-center justify-center gap-3  md:flex md:flex-row md:mt-7 md:items-center md:justify-center md:mr-4 md:gap-2">
                         <Button color="blue" className="rounded-3xl w-44 h-10">
@@ -137,9 +143,9 @@ const WhatWeDo = () => {
       className="py-5 bg-center bg-cover px-2"
     >
       <div className="container text-gray-600">
-        <h1 className="text-blue-900 font-semibold text-3xl text-center py-4">
-          What We Do.
-        </h1>
+        <h3 className="font-bold text-center text-3xl text-blue800 py-3">
+          What We Do
+        </h3>
         <div className="w-full m-auto lg:max-w-[900px]">
           {/* 1st Paragraph */}
           <div className="flex flex-col-reverse gap-3 m-auto py-3 text-left md:flex-row justify-center items-center md:gap-1 md:py-1 md:mx-8 lg:gap-5 lg:mx-2">
@@ -213,11 +219,14 @@ const WhatWeDo = () => {
           </div>
           {/* THE  CTA BUTTON */}
           <div className="mx-auto my-3 flex justify-center items-center ">
-            <Button className="rounded-3xl w-auto h-10 bg-transparent border-blue-800 ">
-              <a className="font-normal text-green-600 hover:text-white">
-                Discover The Trulance Advantage...
-              </a>
-            </Button>
+            <a href="/products">
+              {" "}
+              <Button className="rounded-3xl w-auto h-10 bg-transparent border-blue-800 ">
+                <a className="font-normal text-green-600 hover:text-white">
+                  Discover The Trulance Advantage...
+                </a>
+              </Button>
+            </a>
           </div>
         </div>
       </div>
@@ -228,9 +237,9 @@ const WhatWeDo = () => {
 const Solutions = () => {
   return (
     <div className="bg-neutral-50">
-      <h1 className="text-blue-900 font-semibold text-3xl text-center py-4">
+      <h3 className="font-bold text-center text-3xl text-blue800 pt-10">
         Our Solutions
-      </h1>
+      </h3>
       {/* SOLUTIONS CARD */}
       <div className="mt-4 py-8 w-full flex flex-col items-center lg:flex-row md:px-0 lg:gap-4 lg:justify-center">
         {ServiceCards.map(({ id, title, src }) => (
@@ -262,10 +271,10 @@ const Solutions = () => {
 // QUALITY
 const Quality = () => {
   return (
-    <div className="bg-neutral-100 py-8">
-      <h2 className="text-blue-900 font-semibold text-3xl text-center py-4">
+    <div className="bg-neutral-100 pt-10 pb-20">
+      <h3 className="font-bold text-center text-3xl text-blue800 pt-3 pb-8">
         Why Choose Us
-      </h2>
+      </h3>
       {/* FOR THE QUALITY CARDS */}
       <div className="flex flex-col gap-4 justify-center items-center lg:flex-row">
         {QualityCards.map(({ id, headerImg, body }) => {
@@ -295,25 +304,28 @@ const Banner = () => {
         <div className="flex flex-col my-5 text-center">
           <h2 className="text-white text-2xl font-semibold py-2 md:text-xl">
             Got a project brief?
-          </h2>
-          <Button className="rounded-3xl w-44 bg-transparent border-blue-800 hover:bg-blue-800 hover:text-white mx-auto md:w-32">
-            <a
-              className="text-blue-800 bg-transparent font-bold text-sm"
-              href="#"
-            >
+          </h2>{" "}
+          <a
+            className="text-blue-800 bg-transparent font-bold text-sm"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdaeUFkq43_rwgoBEkUNDgdJTYJBFxVP4vi9V9t7Y0m4ntUpg/viewform?usp=sf_link"
+            target="_blank"
+          >
+            <Button className="rounded-3xl w-44 bg-transparent border-blue-800 hover:bg-blue-800 hover:text-white mx-auto md:w-32">
               Submit Brief
-            </a>
-          </Button>
+            </Button>{" "}
+          </a>
         </div>
         <div className="w-20 border-t border-gray-100 my-1 md:w-0 md:border-t-0 md:border-r md:h-16"></div>
         <div className="flex flex-col my-5 text-center py-4 md:py-2">
           <h2 className="text-white text-2xl md:text-xl">
             Need help finding what you want?
           </h2>
-          <p className="text-sm pb-3">
-            Reach out to us via{" "}
-            <a className="underline text-sx">info@trualance.io</a>
-          </p>
+          <a href="mailto:info@trulance.io">
+            <p className="text-sm pb-3">
+              Reach out to us via{" "}
+              <a className="underline text-sx">info@trulance.io</a>
+            </p>
+          </a>
         </div>
       </div>
     </div>
@@ -323,9 +335,9 @@ const Banner = () => {
 const Testimonals = () => {
   return (
     <div className="bg-neutral-100 py-5">
-      <h2 className="text-blue-900 font-semibold text-3xl text-center py-4">
-        What clients have to say about us.
-      </h2>
+      <h3 className="font-bold text-center text-3xl text-blue800 pt-8 pb-8">
+        What clients have to say about us
+      </h3>
       {/* TESTIMONIALS */}
       <div className="flex flex-col mx-auto gap-4 my-3 lg:flex-row lg:items-center lg:px-5">
         {TestimonialCards.map(({ id, client, NameTag, body }) => {
@@ -353,9 +365,9 @@ const Testimonals = () => {
 const ContactUs = () => {
   return (
     <div className="py-5 m-auto bg-neutral-100" id="ContactUs">
-      <h2 className="text-blue-900 font-semibold text-3xl text-center py-4">
+      <h3 className="font-bold text-center text-3xl text-blue800 pt-8 pb-4">
         Contact Us
-      </h2>
+      </h3>
       <div
         className="md:border border-gray-800 flex flex-col justify-center items-center md:flex-row bg-center bg-cover md:w-1/2 md:mx-auto rounded-2xl mb-5 "
         style={{ backgroundImage: `url(${WhatWeDoBG})` }}
@@ -366,11 +378,15 @@ const ContactUs = () => {
           style={{ backgroundImage: `url(${ContactUsCTA})` }}
         >
           <img src={telphoneIcone} alt="telephoneIcon" className="p-2" />
-          <p className="text-sm text-blue-800">09213324589</p>
+          <a href="tel:+2349132462410">
+            <p className="text-sm text-blue-800">+2349132462410</p>
+          </a>
         </div>
         <div className="flex flex-row m-3 items-center">
           <img src={EmailIcon} alt="EmailIcon" className="p-2" />
-          <p className="text-sm text-blue-800">info@trulance.io</p>
+          <a href="mailto:info@trulance.io">
+            <p className="text-sm text-blue-800">info@trulance.io</p>
+          </a>
         </div>
       </div>
     </div>
