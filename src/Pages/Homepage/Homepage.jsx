@@ -1,5 +1,5 @@
 import { Button, Card, Blockquote } from "flowbite-react";
-
+import ContactUsBtn from "../../components/Buttons";
 import HeroBg from "./assets/HeroBg.jpg";
 import WhatWeDoBG from "./assets/Waves-doodle.jpg";
 import ContactUsCTA from "./assets/ContactUs-CTA.png";
@@ -23,15 +23,10 @@ import EmailIcon from "./assets/Mail-icon.png";
 
 // SERVICE CARDS ARRAY
 const ServiceCards = [
-  {
-    id: 1,
-    title: "Content Creation",
-    src: `${ContentCreationCard}`,
-    link: "#",
-  },
-  { id: 2, title: "Web Devlopment ", src: `${WebDev}`, link: "#" },
-  { id: 3, title: "Data Analysis", src: `${DataAnalysis}`, link: "#" },
-  { id: 4, title: "Digital Marketing", src: `${DMarketing}`, link: "#" },
+  { id: 1, title: "Content Creation", src: `${ContentCreationCard}` },
+  { id: 2, title: "Web Devlopment ", src: `${WebDev}` },
+  { id: 3, title: "Data Analysis", src: `${DataAnalysis}` },
+  { id: 4, title: "Digital Marketing", src: `${DMarketing}` },
 ];
 // QUALITY CARDS ARRAY
 const QualityCards = [
@@ -147,7 +142,7 @@ const WhatWeDo = () => {
         </h1>
         <div className="w-full m-auto lg:max-w-[900px]">
           {/* 1st Paragraph */}
-          <div className="flex flex-col-reverse gap-3 m-auto py-3 text-left md:flex-row justify-center items-center md:gap-1 md:py-1 md:mx-8">
+          <div className="flex flex-col-reverse gap-3 m-auto py-3 text-left md:flex-row justify-center items-center md:gap-1 md:py-1 md:mx-8 lg:gap-5 lg:mx-2">
             {/* WRITE-UP */}
             <div className="m-auto w-3/4 lg:max-w-[400px] md:m-4">
               <p className="">
@@ -182,7 +177,7 @@ const WhatWeDo = () => {
           </div>
 
           {/* 2nd Paragarph */}
-          <div className="flex flex-col-reverse m-auto py-3 text-left  md:flex-row-reverse justify-center items-center md:gap-1 md:py-1 md:mx-8">
+          <div className="flex flex-col-reverse m-auto py-3 text-left  md:flex-row-reverse justify-center items-center md:gap-1 md:py-1 md:mx-8  lg:gap-5 lg:mx-2">
             {/* WRITE UP */}
             <div className="m-auto w-3/4  lg:max-w-[400px] md:m-4">
               <p className="">
@@ -238,27 +233,24 @@ const Solutions = () => {
       </h1>
       {/* SOLUTIONS CARD */}
       <div className="mt-4 py-8 w-full flex flex-col items-center lg:flex-row md:px-0 lg:gap-4 lg:justify-center">
-        {ServiceCards.map(({ id, title, src, link }) => (
+        {ServiceCards.map(({ id, title, src }) => (
           <>
             {/* 1ST CARD */}
             <div
-              className="max-w-xs h-[480px] mt-5 w-72 bg-center bg-no-repeat bg-cover flex items-center flex-col justify-end p-10 rounded-2xl lg:w-60 lg:justify-between lg:mb-0"
+              className="max-w-xs h-[480px] mt-5 w-72 bg-center bg-no-repeat bg-cover flex items-center flex-col justify-end p-10 rounded-2xl lg:w-60 lg:justify-between lg:mb-0 hover:scale-110 md:hover:scale-105"
               key={id}
               style={{ backgroundImage: `url(${src})` }}
             >
-              <div className="mt-48 pt-14 mx-[2px] mb-2 lg:justify-end">
-                <h3 className="text-xl text-center font-semibold tracking-tight text-white dark:text-gray-400 py-5">
-                  {title}
-                </h3>
-                <Button className="rounded-xl w-44 bg-transparent border-green-600 hover:bg-green-600 hover:text-white mx-auto">
-                  <a
-                    className="text-green-600 bg-transparent font-bold text-xl"
-                    href={link}
-                  >
-                    Read more
-                  </a>
-                </Button>
-              </div>
+              <a href="/products">
+                <div className="mt-48 pt-14 mx-[2px] mb-2 lg:justify-center">
+                  <h3 className="text-xl text-center font-semibold tracking-tight text-white dark:text-gray-400 py-5">
+                    {title}
+                  </h3>
+                  <div className="m-auto">
+                    <ContactUsBtn label={"Read More"} />
+                  </div>
+                </div>
+              </a>
             </div>
           </>
         ))}
@@ -360,7 +352,7 @@ const Testimonals = () => {
 // CONTACT US
 const ContactUs = () => {
   return (
-    <div className="py-5 m-auto bg-neutral-100">
+    <div className="py-5 m-auto bg-neutral-100" id="ContactUs">
       <h2 className="text-blue-900 font-semibold text-3xl text-center py-4">
         Contact Us
       </h2>
