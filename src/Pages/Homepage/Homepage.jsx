@@ -237,7 +237,7 @@ const WhatWeDo = () => {
 const Solutions = () => {
   return (
     <div className="bg-neutral-50">
-      <h3 className="font-bold text-center text-3xl text-blue800 pt-10">
+      <h3 className="font-bold text-center text-3xl text-blue800 pt-12">
         Our Solutions
       </h3>
       {/* SOLUTIONS CARD */}
