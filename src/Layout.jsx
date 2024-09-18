@@ -4,7 +4,7 @@ import Navigation from "./components/Navbar";
 // eslint-disable-next-line react/prop-types
 export default function Layout({ children }) {
   return (
-    <div className="max-w-[1440px]  mx-auto">
+    <div>
       <header>
         <Navigation />
       </header>

@@ -43,12 +43,13 @@ export default function DigitalPricingBoard() {
       point6: "Training and Workshops"
     }
   ]
+  
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-8 gap-y-4 mx-2">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-8 gap-y-4 mx-2 ">
       {basicPriceDetails.map((d, index) => {
         return (
-          <div key={index}>
+          <div key={index} >
             <PricingCard cardTitle={d.title} price={d.price}>
               <div className="text-black py-4 px-10">
                 <div>

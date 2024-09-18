@@ -7,7 +7,7 @@ const Footer = () => {
       {/* Section 1  */}
       <div className="flex flex-col font-medium">
         <div>
-          <img src="images/Logo.png" alt="Trulance logo" />
+          <img src="/images/Logo.png" alt="Trulance logo" />
         </div>
         <p className="py-6">Copyright 2024</p>
         <div className="text-base space-y-1">
@@ -50,7 +50,7 @@ const Footer = () => {
           <img src="/images/productPage/ig.png" alt="instagram" />
           <img src="/images/productPage/linkedIn.png" alt="linkedIn" />
           <img src="/images/productPage/x.png" alt="X" />
-          <img src="/images/productPage/facebook.png" alt="" />
+          <img src="/images/productPage/facebook.png" alt="facebook" />
         </div>
       </div>
     </div>

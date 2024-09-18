@@ -60,14 +60,27 @@ export default function WebPricingBoard() {
     }
   ]
 
-  const [showMore, setShowMore] = useState(false);
+  const [showBasicMore, setShowBasicMore] = useState(false);
 
   const ReadMore = () => {
-    setShowMore(!showMore);
+    setShowBasicMore(!showBasicMore);
+  };
+
+
+  const [showStandardMore, setshowStandardMore] = useState(false);
+
+  const ReadStandardMore = () => {
+    setshowStandardMore(!showStandardMore);
+  };
+
+  const [showPremiumMore, setshowPremiumMore] = useState(false);
+
+  const ReadPremiumMore = () => {
+    setshowPremiumMore(!showPremiumMore);
   };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 justify-items-center lg:grid-cols-3 gap-x-8 gap-y-4 mx-2">
+    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 md:col-span-2 justify-items-center  gap-x-8 gap-y-4 mx-2">
       {basicPriceDetails.map((d, index) => {
         return (
           <div key={index}>
@@ -82,12 +95,12 @@ export default function WebPricingBoard() {
                   </ul>
                 </div>
                 <a
-                  className={`underline italic text-blue700 cursor-pointer ${showMore ? "hidden" : "block"}`}
+                  className={`underline italic text-blue700 cursor-pointer ${showBasicMore ? "hidden" : "block"}`}
                   onClick={ReadMore}
                 >
-                  {showMore ? "Read less..." : "Read more..."}
+                  {showBasicMore ? "Read less..." : "Read more..."}
                 </a>
-                <div className={`${showMore ? "block" : "hidden"}`}>
+                <div className={`${showBasicMore ? "block" : "hidden"}`}>
                   <ul className="list-disc">
                     <li>{d.point5}</li>
                     <li>{d.point6}</li>
@@ -98,10 +111,10 @@ export default function WebPricingBoard() {
                   </ul>
                 </div>
                 <a
-                  className={`underline italic text-blue700 cursor-pointer ${showMore ? "block" : "hidden"}`}
+                  className={`underline italic text-blue700 cursor-pointer ${showBasicMore ? "block" : "hidden"}`}
                   onClick={ReadMore}
                 >
-                  {showMore ? "Read less..." : "Read more..."}
+                  {showBasicMore ? "Read less..." : "Read more..."}
                 </a>
               </div>
             </PricingCard>
@@ -111,7 +124,7 @@ export default function WebPricingBoard() {
 
       {standardPriceDetails.map((d, index) => {
         return (
-          <div key={index}>
+          <div key={index} >
             <PricingCard cardTitle={d.title} price={d.price}>
               <div className="text-black py-4 px-10">
                 <div>
@@ -123,12 +136,12 @@ export default function WebPricingBoard() {
                   </ul>
                 </div>
                 <a
-                  className={`underline italic text-blue700 cursor-pointer ${showMore ? "hidden" : "block"}`}
-                  onClick={ReadMore}
+                  className={`underline italic text-blue700 cursor-pointer ${showStandardMore ? "hidden" : "block"}`}
+                  onClick={ReadStandardMore}
                 >
-                  {showMore ? "Read less..." : "Read more..."}
+                  {showStandardMore ? "Read less..." : "Read more..."}
                 </a>
-                <div className={`${showMore ? "block" : "hidden"}`}>
+                <div className={`${showStandardMore ? "block" : "hidden"}`}>
                   <ul className="list-disc">
                     <li>{d.point5}</li>
                     <li>{d.point6}</li>
@@ -140,10 +153,10 @@ export default function WebPricingBoard() {
                   </ul>
                 </div>
                 <a
-                  className={`underline italic text-blue700 cursor-pointer ${showMore ? "block" : "hidden"}`}
-                  onClick={ReadMore}
+                  className={`underline italic text-blue700 cursor-pointer ${showStandardMore ? "block" : "hidden"}`}
+                  onClick={ReadStandardMore}
                 >
-                  {showMore ? "Read less..." : "Read more..."}
+                  {showStandardMore ? "Read less..." : "Read more..."}
                 </a>
               </div>
             </PricingCard>
@@ -166,12 +179,12 @@ export default function WebPricingBoard() {
                   </ul>
                 </div>
                 <a
-                  className={`underline italic text-blue700 cursor-pointer ${showMore ? "hidden" : "block"}`}
-                  onClick={ReadMore}
+                  className={`underline italic text-blue700 cursor-pointer ${showPremiumMore ? "hidden" : "block"}`}
+                  onClick={ReadPremiumMore}
                 >
-                  {showMore ? "Read less..." : "Read more..."}
+                  {showPremiumMore ? "Read less..." : "Read more..."}
                 </a>
-                <div className={`${showMore ? "block" : "hidden"}`}>
+                <div className={`${showPremiumMore ? "block" : "hidden"}`}>
                   <ul className="list-disc">
                     <li>{d.point5}</li>
                     <li>{d.point6}</li>
@@ -185,10 +198,10 @@ export default function WebPricingBoard() {
                   </ul>
                 </div>
                 <a
-                  className={`underline italic text-blue700 cursor-pointer ${showMore ? "block" : "hidden"}`}
-                  onClick={ReadMore}
+                  className={`underline italic text-blue700 cursor-pointer ${showPremiumMore ? "block" : "hidden"}`}
+                  onClick={ReadPremiumMore}
                 >
-                  {showMore ? "Read less..." : "Read more..."}
+                  {showPremiumMore ? "Read less..." : "Read more..."}
                 </a>
               </div>
             </PricingCard>

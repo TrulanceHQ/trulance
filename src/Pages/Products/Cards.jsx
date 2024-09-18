@@ -2,7 +2,6 @@
 import { TiArrowSortedUp } from "react-icons/ti";
 import { PriceButton } from "../../components/Buttons";
 import { CgQuote } from "react-icons/cg";
-import { Avatar } from "flowbite-react";
 
 export default function HowWeWorkCards({ TitleText, p1, p2, p3 }) {
   return (
@@ -58,11 +57,13 @@ export function TestimonialCard({ testimony, imgUrl, name }) {
   return (
     <div className="text-black border rounded-lg w-64 h-56">
       <CgQuote className="w-10 h-10" />
-      <p className="text-base font-medium pl-8 pr-2 text-[#6F7780]">
+      <p className="text-base font-medium pl-8 pr-2 text-[#6F7780] h-28">
         {testimony}
       </p>
       <div className="flex flex-row pl-8 py-3">
-        <Avatar img={imgUrl} alt="avatar of Jese" rounded size={"sm"} />
+        <div>
+          <img src={imgUrl} alt="" className="w-10 h-10" />
+        </div>
         <p className="text-DarkBlue text-sm font-medium p-3"> - {name}</p>
       </div>
     </div>
