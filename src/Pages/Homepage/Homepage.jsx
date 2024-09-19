@@ -187,10 +187,8 @@ const WhatWeDo = () => {
                     </div>
                     {/* THE  CTA BUTTON */}
                     <div className="mx-auto my-3 flex justify-center items-center ">
-                        <Button className="rounded-3xl w-auto h-10 bg-transparent border-blue-800 ">
-                            <a className="font-normal text-green-600 hover:text-white">
-                                Discover The Trulance Advantage...
-                            </a>
+                        <Button className="rounded-3xl w-auto h-10 bg-transparent border-blue-800 text-green-600 hover:text-white ">
+                            <a className="font-normal ">Discover The Trulance Advantage...</a>
                         </Button>
                     </div>
                 </div>
@@ -209,7 +207,7 @@ const Solutions = () => {
                     <>
                         {/* 1ST CARD */}
                         <div
-                            className="max-w-xs h-[480px] mt-5 w-72 bg-center bg-no-repeat bg-cover flex items-center flex-col justify-end p-10 rounded-2xl lg:w-60 lg:justify-between lg:mb-0 hover:scale-110 md:hover:scale-105"
+                            className="max-w-xs h-[480px] mt-5 w-72 bg-center bg-no-repeat bg-cover flex items-center flex-col justify-end p-10 rounded-2xl lg:w-60 lg:justify-between lg:mb-0 hover:scale-100 md:hover:scale-105"
                             key={id}
                             style={{backgroundImage: `url(${src})`}}
                         >
