@@ -24,7 +24,7 @@ import EmailIcon from "./assets/Mail-icon.png";
 // SERVICE CARDS ARRAY
 const ServiceCards = [
     {id: 1, title: "Content Creation", src: `${ContentCreationCard}`},
-    {id: 2, title: "Web Devlopment ", src: `${WebDev}`},
+    {id: 2, title: "Web Development ", src: `${WebDev}`},
     {id: 3, title: "Data Analysis", src: `${DataAnalysis}`},
     {id: 4, title: "Digital Marketing", src: `${DMarketing}`},
 ];
@@ -188,7 +188,9 @@ const WhatWeDo = () => {
                     {/* THE  CTA BUTTON */}
                     <div className="mx-auto my-3 flex justify-center items-center ">
                         <Button className="rounded-3xl w-auto h-10 bg-transparent border-blue-800 text-green-600 hover:text-white ">
-                            <a className="font-normal ">Discover The Trulance Advantage...</a>
+                            <a className="font-normal" href="/products">
+                                Discover The Trulance Advantage...
+                            </a>
                         </Button>
                     </div>
                 </div>
@@ -213,7 +215,7 @@ const Solutions = () => {
                         >
                             <a href="/products">
                                 <div className="mt-48 pt-14 mx-[2px] mb-2 lg:justify-center">
-                                    <h3 className="text-xl text-center font-semibold tracking-tight text-white dark:text-gray-400 py-5">
+                                    <h3 className="text-[18px] text-center font-semibold tracking-tight text-white dark:text-gray-400 py-5">
                                         {title}
                                     </h3>
                                     <div className="mx-5">
