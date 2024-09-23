@@ -24,7 +24,7 @@ import EmailIcon from "./assets/Mail-icon.png";
 // SERVICE CARDS ARRAY
 const ServiceCards = [
   { id: 1, title: "Content Creation", src: `${ContentCreationCard}` },
-  { id: 2, title: "Web Devlopment ", src: `${WebDev}` },
+  { id: 2, title: "Web Development ", src: `${WebDev}` },
   { id: 3, title: "Data Analysis", src: `${DataAnalysis}` },
   { id: 4, title: "Digital Marketing", src: `${DMarketing}` },
 ];
@@ -76,7 +76,7 @@ const TestimonialCards = [
 
 const Homepage = () => {
   return (
-    <div className="pt-12">
+    <div className="pt-0">
       <Hero />
       <WhatWeDo />
       <Solutions />
@@ -143,9 +143,9 @@ const WhatWeDo = () => {
       className="py-5 bg-center bg-cover px-2"
     >
       <div className="container text-gray-600">
-        <h3 className="font-bold text-center text-3xl text-blue800 py-3">
-          What We Do
-        </h3>
+        <h1 className="text-blue-900 font-semibold text-3xl text-center py-4">
+          What We Do.
+        </h1>
         <div className="w-full m-auto lg:max-w-[900px]">
           {/* 1st Paragraph */}
           <div className="flex flex-col-reverse gap-3 m-auto py-3 text-left md:flex-row justify-center items-center md:gap-1 md:py-1 md:mx-8 lg:gap-5 lg:mx-2">
@@ -219,14 +219,11 @@ const WhatWeDo = () => {
           </div>
           {/* THE  CTA BUTTON */}
           <div className="mx-auto my-3 flex justify-center items-center ">
-            <a href="/products">
-              {" "}
-              <Button className="rounded-3xl w-auto h-10 bg-transparent border-blue-800 ">
-                <a className="font-normal text-green-600 hover:text-white">
-                  Discover The Trulance Advantage...
-                </a>
-              </Button>
-            </a>
+            <Button className="rounded-3xl w-auto h-10 bg-transparent border-blue-800 text-green-600 hover:text-white ">
+              <a className="font-normal" href="/products">
+                Discover The Trulance Advantage...
+              </a>
+            </Button>
           </div>
         </div>
       </div>
@@ -237,25 +234,25 @@ const WhatWeDo = () => {
 const Solutions = () => {
   return (
     <div className="bg-neutral-50">
-      <h3 className="font-bold text-center text-3xl text-blue800 pt-12">
+      <h1 className="text-blue-900 font-semibold text-3xl text-center py-4">
         Our Solutions
-      </h3>
+      </h1>
       {/* SOLUTIONS CARD */}
       <div className="mt-4 py-8 w-full flex flex-col items-center lg:flex-row md:px-0 lg:gap-4 lg:justify-center">
         {ServiceCards.map(({ id, title, src }) => (
           <>
             {/* 1ST CARD */}
             <div
-              className="max-w-xs h-[480px] mt-5 w-72 bg-center bg-no-repeat bg-cover flex items-center flex-col justify-end p-10 rounded-2xl lg:w-60 lg:justify-between lg:mb-0 hover:scale-110 md:hover:scale-105"
+              className="max-w-xs h-[480px] mt-5 w-72 bg-center bg-no-repeat bg-cover flex items-center flex-col justify-end p-10 rounded-2xl lg:w-60 lg:justify-between lg:mb-0 hover:scale-100 md:hover:scale-105"
               key={id}
               style={{ backgroundImage: `url(${src})` }}
             >
               <a href="/products">
                 <div className="mt-48 pt-14 mx-[2px] mb-2 lg:justify-center">
-                  <h3 className="text-xl text-center font-semibold tracking-tight text-white dark:text-gray-400 py-5">
+                  <h3 className="text-[18px] text-center font-semibold tracking-tight text-white dark:text-gray-400 py-5">
                     {title}
                   </h3>
-                  <div className="m-auto">
+                  <div className="mx-5">
                     <ContactUsBtn label={"Read More"} />
                   </div>
                 </div>
@@ -271,10 +268,10 @@ const Solutions = () => {
 // QUALITY
 const Quality = () => {
   return (
-    <div className="bg-neutral-100 pt-10 pb-20">
-      <h3 className="font-bold text-center text-3xl text-blue800 pt-3 pb-8">
+    <div className="bg-white py-8">
+      <h2 className="text-blue-900 font-semibold text-3xl text-center py-4">
         Why Choose Us
-      </h3>
+      </h2>
       {/* FOR THE QUALITY CARDS */}
       <div className="flex flex-col gap-4 justify-center items-center lg:flex-row">
         {QualityCards.map(({ id, headerImg, body }) => {
@@ -334,10 +331,10 @@ const Banner = () => {
 
 const Testimonals = () => {
   return (
-    <div className="bg-neutral-100 py-5">
-      <h3 className="font-bold text-center text-3xl text-blue800 pt-8 pb-8">
-        What clients have to say about us
-      </h3>
+    <div className="bg-white py-5">
+      <h2 className="text-blue-900 font-semibold text-3xl text-center py-4">
+        What clients have to say about us.
+      </h2>
       {/* TESTIMONIALS */}
       <div className="flex flex-col mx-auto gap-4 my-3 lg:flex-row lg:items-center lg:px-5">
         {TestimonialCards.map(({ id, client, NameTag, body }) => {
