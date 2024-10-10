@@ -6,6 +6,7 @@ export default function WebPricingBoard() {
     {
 
       title: "BASIC",
+      title2: "",
       price: "200,000.00",
       point1: "3 pages",
       point2: "Basic design using a template or simple custom design (1 design revision)",
@@ -84,7 +85,7 @@ export default function WebPricingBoard() {
       {basicPriceDetails.map((d, index) => {
         return (
           <div key={index}>
-            <PricingCard cardTitle={d.title} price={d.price}>
+            <PricingCard cardTitle={d.title} cardTitle2={d.title2} price={d.price}>
               <div className="text-black py-4 px-10">
                 <div>
                   <ul className="list-disc">
@@ -95,7 +96,7 @@ export default function WebPricingBoard() {
                   </ul>
                 </div>
                 <a
-                  className={`underline italic text-blue700 cursor-pointer ${showBasicMore ? "hidden" : "block"}`}
+                  className={`underline py-2 italic text-blue700 cursor-pointer ${showBasicMore ? "hidden" : "block"}`}
                   onClick={ReadMore}
                 >
                   {showBasicMore ? "Read less..." : "Read more..."}
@@ -111,7 +112,7 @@ export default function WebPricingBoard() {
                   </ul>
                 </div>
                 <a
-                  className={`underline italic text-blue700 cursor-pointer ${showBasicMore ? "block" : "hidden"}`}
+                  className={`underline py-2  italic text-blue700 cursor-pointer ${showBasicMore ? "block" : "hidden"}`}
                   onClick={ReadMore}
                 >
                   {showBasicMore ? "Read less..." : "Read more..."}
@@ -136,7 +137,7 @@ export default function WebPricingBoard() {
                   </ul>
                 </div>
                 <a
-                  className={`underline italic text-blue700 cursor-pointer ${showStandardMore ? "hidden" : "block"}`}
+                  className={`underline py-2  italic text-blue700 cursor-pointer ${showStandardMore ? "hidden" : "block"}`}
                   onClick={ReadStandardMore}
                 >
                   {showStandardMore ? "Read less..." : "Read more..."}
@@ -153,7 +154,7 @@ export default function WebPricingBoard() {
                   </ul>
                 </div>
                 <a
-                  className={`underline italic text-blue700 cursor-pointer ${showStandardMore ? "block" : "hidden"}`}
+                  className={`underline py-2  italic text-blue700 cursor-pointer ${showStandardMore ? "block" : "hidden"}`}
                   onClick={ReadStandardMore}
                 >
                   {showStandardMore ? "Read less..." : "Read more..."}
@@ -179,7 +180,7 @@ export default function WebPricingBoard() {
                   </ul>
                 </div>
                 <a
-                  className={`underline italic text-blue700 cursor-pointer ${showPremiumMore ? "hidden" : "block"}`}
+                  className={`underline py-2  italic text-blue700 cursor-pointer ${showPremiumMore ? "hidden" : "block"}`}
                   onClick={ReadPremiumMore}
                 >
                   {showPremiumMore ? "Read less..." : "Read more..."}
@@ -198,7 +199,7 @@ export default function WebPricingBoard() {
                   </ul>
                 </div>
                 <a
-                  className={`underline italic text-blue700 cursor-pointer ${showPremiumMore ? "block" : "hidden"}`}
+                  className={`underline py-2  italic text-blue700 cursor-pointer ${showPremiumMore ? "block" : "hidden"}`}
                   onClick={ReadPremiumMore}
                 >
                   {showPremiumMore ? "Read less..." : "Read more..."}
