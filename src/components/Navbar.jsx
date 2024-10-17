@@ -46,7 +46,7 @@ export default function Navigation() {
             <li className="w-full text-center border-b border-t border-gray-100 md:border-0">
               <a
                 href="/about"
-                className={`block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-buttonGreen md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent ${isActive(
+                className={`block py-2 px-3 text-white/100  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-buttonGreen md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent ${isActive(
                   "/about"
                 )}`}
               >

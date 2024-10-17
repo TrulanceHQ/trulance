@@ -38,14 +38,19 @@ export function OurSolutionsCard({ imageLink, headerText, pText }) {
   );
 }
 
-export function PricingCard({ cardTitle, price, children }) {
+export function PricingCard({ cardTitle, cardTitle2, price, children }) {
   return (
-    <div className="bg-white w-72 lg:w-80 min-h-[28rem] rounded-3xl shadow-lg">
-      <div className="bg-blue700 rounded-t-3xl h-32 flex flex-col justify-between items-center text-xl space-y-0">
-        <h3 className="font-semibold pt-12">{cardTitle}</h3>
-        <TiArrowSortedUp className="text-white w-16 h-16 relative top-6" />
+    <div className="bg-white w-72 lg:w-80 min-h-[33rem] rounded-3xl shadow-lg">
+      <div className="bg-blue700 rounded-t-3xl  flex flex-col items-center text-xl space-y-0">
+        <div className="text-center h-[6rem]">
+          <h3 className="font-semibold pt-12">{cardTitle}</h3>
+          <h3 className="font-semibold ">{cardTitle2}</h3>
+        </div>
+        <div className="relative top-7">
+          <TiArrowSortedUp className="text-white w-16 h-16" />
+        </div>
       </div>
-      <div className="my-4 flex justify-center items-center">
+      <div className="mt-10 mb-6 flex justify-center items-center">
         <PriceButton price={price} />
       </div>
       <div>{children}</div>
