@@ -44,7 +44,7 @@ export default function Pricing() {
     <div>
       <div className="flex flex-col items-center justify-center py-5">
         <h3 className="font-bold text-center text-3xl text-blue800">
-          Our Pricing
+          Our Pricingg
         </h3>
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4 my-5">
           <PricingButton
