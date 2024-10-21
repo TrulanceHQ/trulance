@@ -83,6 +83,11 @@ export default function Pricing() {
           You will provide the product image, pictures, content, graphics, logo,
           and icons for the each project.
         </li>
+        <li>
+          Visual representation of data insights using industry-leading tools
+          (Power BI, Tableau, Matplotlib, Seaborn) to effectively communicate
+          findings through interactive graphs, charts and diagrams.
+        </li>
       </div>
     </div>
   );
