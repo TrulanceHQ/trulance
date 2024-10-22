@@ -7,13 +7,13 @@ import Products from "./Pages/Products/Products";
 function App() {
   return (
     <Router>
-      {/* <Layout> */}
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/products" element={<Products />} />
-      </Routes>
-      {/* </Layout> */}
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/products" element={<Products />} />
+        </Routes>
+      </Layout>
     </Router>
   );
 }
