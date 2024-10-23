@@ -4,6 +4,7 @@ import ContentPricingBoard from "./ContentPricing";
 import DataPricingBoard from "./DataPricing";
 import DigitalPricingBoard from "./DigitalPricing";
 import WebPricingBoard from "./WebPricingBoard";
+import { Button } from "flowbite-react";
 
 export default function Pricing() {
   const [currentComponent, setCurrentComponent] = useState("web");
@@ -71,7 +72,16 @@ export default function Pricing() {
         <div className="md:mx-8">{renderComponent()}</div>
       </div>
       <div className="text-black text-base mx-10 md:mx-6 lg:mx-12 xl:mx-48 my-6">
-        <h3 className="font-bold ">NOTE:</h3>
+        <a
+          className="text-blue-800 bg-transparent font-bold text-sm"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdaeUFkq43_rwgoBEkUNDgdJTYJBFxVP4vi9V9t7Y0m4ntUpg/viewform?usp=sf_link"
+          target="_blank"
+        >
+          <Button className="bg-blue700 rounded-3xl w-44 hover:bg-blue700 hover:text-white mx-auto md:w-32">
+            Submit Brief
+          </Button>{" "}
+        </a>
+        <h3 className="font-bold mt-8">NOTE:</h3>
         <li>
           For companies requiring custom web applications (large-scale
           applications), pricing varies widely depending on the specific

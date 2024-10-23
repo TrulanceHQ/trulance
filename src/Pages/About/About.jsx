@@ -149,9 +149,12 @@ const AboutJoin = () => {
           Trulance offers a platform to showcase your expertise and contribute
           to cutting-edge projects.
         </p>
-        <button className="bg-blue-700 text-white py-3 px-8 rounded-full font-medium hover:bg-blue-800 hover:scale-105 transition-transform duration-300">
-          Join now
-        </button>
+        <a href="https://forms.gle/ZDXJqX5ZBD8M58HR6" target="_blank">
+          {" "}
+          <button className="bg-blue-700 text-white py-3 px-8 rounded-full font-medium hover:bg-blue-800 hover:scale-105 transition-transform duration-300">
+            Join now
+          </button>
+        </a>
       </div>
     </div>
   );

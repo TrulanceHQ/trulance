@@ -144,7 +144,7 @@ const WhatWeDo = () => {
     >
       <div className="container text-gray-600">
         <h1 className="text-blue-900 font-semibold text-3xl text-center py-4">
-          What We Do.
+          What We Do
         </h1>
         <div className="w-full m-auto lg:max-w-[900px]">
           {/* 1st Paragraph */}
