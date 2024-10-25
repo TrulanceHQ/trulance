@@ -16,8 +16,8 @@ export default function WebPricingBoard() {
       point6: "Social media integration",
       point7: "Google forms integration",
       point8: "Duration: 3 weeks",
-      point9: "Domain (.com/1yr) - 28,000",
-      point10: "Hosting - 50,000",
+      point9: "Domain (.com/1yr) - ₦28,000",
+      point10: "Hosting - ₦50,000",
     },
   ];
 
@@ -35,8 +35,8 @@ export default function WebPricingBoard() {
       point7: "Social media integration",
       point8: "Google forms integration",
       point9: "Duration: 6 weeks",
-      point10: "Domain(.com/1yr) - 28,000",
-      point11: "Hosting - 50,000",
+      point10: "Domain(.com/1yr) - ₦28,000",
+      point11: "Hosting - ₦50,000",
     },
   ];
 
@@ -54,9 +54,9 @@ export default function WebPricingBoard() {
       point8: "Performance optimization and security measures",
       point9: "Testing",
       point10: "Duration: 24 weeks",
-      point11: "Domain(.com/1yr) - 28,000",
-      point12: "Hosting - 120,000",
-      point13: "Advancement SEO optimization starts at N650,000",
+      point11: "Domain(.com/1yr) - ₦28,000",
+      point12: "Hosting - ₦120,000",
+      point13: "Advancement SEO optimization starts at ₦650,000",
     },
   ];
 
