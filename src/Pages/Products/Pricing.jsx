@@ -77,11 +77,11 @@ export default function Pricing() {
           href="https://docs.google.com/forms/d/e/1FAIpQLSdaeUFkq43_rwgoBEkUNDgdJTYJBFxVP4vi9V9t7Y0m4ntUpg/viewform?usp=sf_link"
           target="_blank"
         >
-          <Button className="bg-blue700 rounded-3xl w-44 hover:bg-blue700 hover:text-white mx-auto md:w-32">
+          <Button className="rounded-3xl w-44 bg-blue700 hover:bg-blue-800 hover:text-white mx-auto md:w-32">
             Submit Brief
           </Button>{" "}
         </a>
-        <h3 className="font-bold mt-8">NOTE:</h3>
+        <h3 className="font-bold ">NOTE:</h3>
         <li>
           For companies requiring custom web applications (large-scale
           applications), pricing varies widely depending on the specific
