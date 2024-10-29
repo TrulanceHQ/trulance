@@ -1,5 +1,6 @@
 {
   "name": "trulance",
+  "homepage": "https://trulance.io/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
